@@ -7,6 +7,7 @@ import { Button, Row } from 'reactstrap'
 import { login, signup } from './AuthActions'
 import Messages from '../common/msg/messages'
 import Input from '../common/form/inputAuth'
+import './Auth.css';
 
 class Auth extends Component {
 
@@ -31,11 +32,8 @@ class Auth extends Component {
 
         return (
             <div className="login-box">
-                <div className="login-logo">
-                    <b>C</b>ommissions
-                </div>
                 <div className="login-box-body">
-                    <p className="login-box-msg">Bem vindo!</p>
+                    <p className="login-box-msg">Welcome!</p>
                     <form onSubmit={handleSubmit(v => this.onSubmit(v))}>
                         <Field component={Input} type="input" name="name" placeholder="Nome" icon='user' hide={loginMode} />
                         <Field component={Input} type="email" name="email" placeholder="E-mail" icon='envelope' />
@@ -49,7 +47,7 @@ class Auth extends Component {
                     </form>
                     <br />
                     <a onClick={() => this.changeMode()}>
-                        {loginMode ? 'Novo usuário? Registrar aqui!' : 'Já é cadastrado? Entrar aqui!'}
+                        {loginMode ? 'New User? Join now!' : 'Already a member? Sign In!'}
                     </a>
                 </div>
                 <Messages />                

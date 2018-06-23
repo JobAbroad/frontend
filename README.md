@@ -6,16 +6,19 @@ The Frontend React project is able to connect in a Java Backend through JWT auth
 
 The Frontend is using the bootstrap layout and toastr messages.
 
-Folder Structure:
-  src/assets: assets files like images;
-  src/auth: react component for login with their redux action and reducer;
-  src/common/form: react components using in forms;
-  src/common/msg: react component for message using react-redux-toastr;
-  src/common/operator: react component for operations in render;
-  src/jobs: react component for job with their redux action and reducer;
-  src/main: main app;
+Folder Structure
+----------------
+
+- src/assets: assets files like images;
+- src/auth: react component for login with their redux action and reducer;
+- src/common/form: react components using in forms;
+- src/common/msg: react component for message using react-redux-toastr;
+- src/common/operator: react component for operations in render;
+- src/jobs: react component for job with their redux action and reducer;
+- src/main: main app;
 
 Available Scripts
+-----------------
 
 In the project directory, you can run:
 

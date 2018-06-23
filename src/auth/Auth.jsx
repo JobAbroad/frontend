@@ -24,7 +24,7 @@ class Auth extends Component {
     onSubmit(values) {
         const { login, signup } = this.props
         this.state.loginMode ? login(values) : signup(values)
-        return <Redirect to='/' />
+        this.props.history.push('/jobs');
     }
 
     render() {

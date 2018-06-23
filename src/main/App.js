@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import {
   Collapse,
   Navbar,
@@ -62,4 +63,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({ validToken: state.auth.validToken })
+
+export default connect(mapStateToProps)(App)

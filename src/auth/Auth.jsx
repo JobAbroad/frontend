@@ -4,8 +4,6 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Button, Row } from 'reactstrap'
 
-import { Redirect } from 'react-router-dom'
-
 import { login, signup } from './AuthActions'
 import Messages from '../common/msg/messages'
 import Input from '../common/form/inputAuth'

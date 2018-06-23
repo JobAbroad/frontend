@@ -22,16 +22,8 @@ export class JobList extends Component {
                 <td> {job.title} </td>
                 <td> {job.companyId} </td>
                 <td>
-                    <button type="button" className="btn btn-warning" data-toggle="modal" data-target="#myModal" onClick={() => this.showUpdate(job)}>
-                        <i className='fa fa-pencil'></i>
-                    </button>
-                    &nbsp;
-                    <button type="button" className='btn btn-danger' onClick={() => this.props.remove(job)}>
-                        <i className='fa fa-trash-o'></i>
-                    </button>
-                    &nbsp;
-                    <button type="button" className='btn btn-primary' data-toggle="modal" data-target="#myModal" onClick={() => this.addjob()}>
-                        <i className='fa fa-plus'></i>
+                    <button type="button" className="btn btn-success" data-toggle="modal" data-target="#myModal" onClick={() => this.applyToJob(job)}>
+                        <i className='fa fa-check'></i>
                     </button>
                 </td>
             </tr>
